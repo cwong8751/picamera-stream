@@ -4,14 +4,13 @@ import time
 
 app = Flask(__name__)
 
-# Initialize the OpenCV camera
-camera = cv2.VideoCapture(0)  # 0 is usually the default camera index
-camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-camera.set(cv2.CAP_PROP_FPS, 24)
-
-
 def generate_frames():
+    # Initialize the OpenCV camera
+    camera = cv2.VideoCapture(0)  # 0 is usually the default camera index
+    camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+    camera.set(cv2.CAP_PROP_FPS, 24)
+    
     time.sleep(2)  # Camera warm-up time
     while True:
         success, image = camera.read()  # Capture frame-by-frame
