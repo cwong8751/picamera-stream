@@ -1,30 +1,27 @@
 from flask import Flask, Response
-from picamera import PiCamera
-from picamera.array import PiRGBArray
 import cv2
 import time
 
 app = Flask(__name__)
 
-# Initialize the Pi Camera
-camera = PiCamera()
-camera.resolution = (640, 480)
-camera.framerate = 24
-raw_capture = PiRGBArray(camera, size=(640, 480))
+# Initialize the OpenCV camera
+camera = cv2.VideoCapture(0)  # 0 is usually the default camera index
+camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+camera.set(cv2.CAP_PROP_FPS, 24)
 
 
 def generate_frames():
     time.sleep(2)  # Camera warm-up time
-    for frame in camera.capture_continuous(raw_capture, format="bgr", use_video_port=True):
-        # Convert the image to a JPEG format
-        image = frame.array
+    while True:
+        success, image = camera.read()  # Capture frame-by-frame
+        if not success:
+            break
         ret, buffer = cv2.imencode('.jpg', image)
         frame = buffer.tobytes()
 
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
-
-        raw_capture.truncate(0)  # Clear the stream for the next frame
 
 
 @app.route('/')
