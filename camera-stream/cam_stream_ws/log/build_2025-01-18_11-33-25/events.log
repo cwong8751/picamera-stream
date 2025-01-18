@@ -1,0 +1,91 @@
+[0.000000] (-) TimerEvent: {}
+[0.001532] (cam_stream) JobQueued: {'identifier': 'cam_stream', 'dependencies': OrderedDict()}
+[0.002130] (cam_stream) JobStarted: {'identifier': 'cam_stream'}
+[0.099027] (-) TimerEvent: {}
+[0.199778] (-) TimerEvent: {}
+[0.300760] (-) TimerEvent: {}
+[0.401443] (-) TimerEvent: {}
+[0.502040] (-) TimerEvent: {}
+[0.602618] (-) TimerEvent: {}
+[0.703249] (-) TimerEvent: {}
+[0.803913] (-) TimerEvent: {}
+[0.905241] (-) TimerEvent: {}
+[1.007512] (-) TimerEvent: {}
+[1.108114] (-) TimerEvent: {}
+[1.208783] (-) TimerEvent: {}
+[1.309522] (-) TimerEvent: {}
+[1.410126] (-) TimerEvent: {}
+[1.510764] (-) TimerEvent: {}
+[1.611377] (-) TimerEvent: {}
+[1.711973] (-) TimerEvent: {}
+[1.812548] (-) TimerEvent: {}
+[1.913261] (-) TimerEvent: {}
+[2.013847] (-) TimerEvent: {}
+[2.114495] (-) TimerEvent: {}
+[2.215253] (-) TimerEvent: {}
+[2.315947] (-) TimerEvent: {}
+[2.416593] (-) TimerEvent: {}
+[2.517217] (-) TimerEvent: {}
+[2.617828] (-) TimerEvent: {}
+[2.718466] (-) TimerEvent: {}
+[2.819168] (-) TimerEvent: {}
+[2.919910] (-) TimerEvent: {}
+[3.020668] (-) TimerEvent: {}
+[3.121394] (-) TimerEvent: {}
+[3.222022] (-) TimerEvent: {}
+[3.322582] (-) TimerEvent: {}
+[3.423133] (-) TimerEvent: {}
+[3.523713] (-) TimerEvent: {}
+[3.624537] (-) TimerEvent: {}
+[3.725784] (-) TimerEvent: {}
+[3.827000] (-) TimerEvent: {}
+[3.859158] (cam_stream) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/cam_stream', 'build', '--build-base', '/home/drone/camera-stream/cam_stream_ws/build/cam_stream/build', 'install', '--record', '/home/drone/camera-stream/cam_stream_ws/build/cam_stream/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/drone/camera-stream/cam_stream_ws/src/cam_stream', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'drone', 'SSH_CLIENT': '172.27.92.124 57086 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/drone', 'OLDPWD': '/home/drone/camera-stream', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'drone', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/lib/ccache:/home/drone/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/drone/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/drone/ros2_ws/Micro-XRCE-DDS-Gen/scripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/drone/camera-stream/cam_stream_ws/build/cam_stream', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.27.92.124 57086 172.27.40.177 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/drone/camera-stream/cam_stream_ws/build/cam_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/drone/camera-stream/cam_stream_ws/install/cam_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.927162] (-) TimerEvent: {}
+[4.027814] (-) TimerEvent: {}
+[4.128758] (-) TimerEvent: {}
+[4.229416] (-) TimerEvent: {}
+[4.330031] (-) TimerEvent: {}
+[4.430658] (-) TimerEvent: {}
+[4.493432] (cam_stream) StderrLine: {'line': b"/home/drone/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[4.494095] (cam_stream) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[4.530922] (-) TimerEvent: {}
+[4.631800] (-) TimerEvent: {}
+[4.732390] (-) TimerEvent: {}
+[4.832985] (-) TimerEvent: {}
+[4.872286] (cam_stream) StdoutLine: {'line': b'running egg_info\n'}
+[4.932131] (cam_stream) StdoutLine: {'line': b'writing ../../build/cam_stream/cam_stream.egg-info/PKG-INFO\n'}
+[4.933113] (-) TimerEvent: {}
+[4.934483] (cam_stream) StdoutLine: {'line': b'writing dependency_links to ../../build/cam_stream/cam_stream.egg-info/dependency_links.txt\n'}
+[4.935754] (cam_stream) StdoutLine: {'line': b'writing entry points to ../../build/cam_stream/cam_stream.egg-info/entry_points.txt\n'}
+[4.937000] (cam_stream) StdoutLine: {'line': b'writing requirements to ../../build/cam_stream/cam_stream.egg-info/requires.txt\n'}
+[4.938021] (cam_stream) StdoutLine: {'line': b'writing top-level names to ../../build/cam_stream/cam_stream.egg-info/top_level.txt\n'}
+[5.033285] (-) TimerEvent: {}
+[5.068012] (cam_stream) StdoutLine: {'line': b"reading manifest file '../../build/cam_stream/cam_stream.egg-info/SOURCES.txt'\n"}
+[5.074394] (cam_stream) StdoutLine: {'line': b"writing manifest file '../../build/cam_stream/cam_stream.egg-info/SOURCES.txt'\n"}
+[5.075100] (cam_stream) StdoutLine: {'line': b'running build\n'}
+[5.075572] (cam_stream) StdoutLine: {'line': b'running build_py\n'}
+[5.076497] (cam_stream) StdoutLine: {'line': b'copying cam_stream/__init__.py -> /home/drone/camera-stream/cam_stream_ws/build/cam_stream/build/lib/cam_stream\n'}
+[5.077587] (cam_stream) StdoutLine: {'line': b'copying cam_stream/camera_publisher.py -> /home/drone/camera-stream/cam_stream_ws/build/cam_stream/build/lib/cam_stream\n'}
+[5.080052] (cam_stream) StdoutLine: {'line': b'running install\n'}
+[5.100856] (cam_stream) StdoutLine: {'line': b'running install_lib\n'}
+[5.133418] (-) TimerEvent: {}
+[5.164041] (cam_stream) StdoutLine: {'line': b'running install_data\n'}
+[5.165204] (cam_stream) StdoutLine: {'line': b'copying resource/cam_stream -> /home/drone/camera-stream/cam_stream_ws/install/cam_stream/share/ament_index/resource_index/packages\n'}
+[5.166764] (cam_stream) StdoutLine: {'line': b'copying package.xml -> /home/drone/camera-stream/cam_stream_ws/install/cam_stream/share/cam_stream\n'}
+[5.167555] (cam_stream) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.232529] (cam_stream) StdoutLine: {'line': b"removing '/home/drone/camera-stream/cam_stream_ws/install/cam_stream/lib/python3.10/site-packages/cam_stream-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.233527] (-) TimerEvent: {}
+[5.234325] (cam_stream) StdoutLine: {'line': b'Copying ../../build/cam_stream/cam_stream.egg-info to /home/drone/camera-stream/cam_stream_ws/install/cam_stream/lib/python3.10/site-packages/cam_stream-0.0.0-py3.10.egg-info\n'}
+[5.240723] (cam_stream) StdoutLine: {'line': b'running install_scripts\n'}
+[5.333672] (-) TimerEvent: {}
+[5.434247] (-) TimerEvent: {}
+[5.534803] (-) TimerEvent: {}
+[5.635352] (-) TimerEvent: {}
+[5.735968] (-) TimerEvent: {}
+[5.809120] (cam_stream) StdoutLine: {'line': b'Installing camera_publish script to /home/drone/camera-stream/cam_stream_ws/install/cam_stream/lib/cam_stream\n'}
+[5.810972] (cam_stream) StdoutLine: {'line': b"writing list of installed files to '/home/drone/camera-stream/cam_stream_ws/build/cam_stream/install.log'\n"}
+[5.836303] (-) TimerEvent: {}
+[5.936433] (cam_stream) CommandEnded: {'returncode': 0}
+[5.937537] (-) TimerEvent: {}
+[6.007785] (cam_stream) JobEnded: {'identifier': 'cam_stream', 'rc': 0}
+[6.010998] (-) EventReactorShutdown: {}

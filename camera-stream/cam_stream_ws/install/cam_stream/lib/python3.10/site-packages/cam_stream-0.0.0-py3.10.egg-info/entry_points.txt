@@ -1,0 +1,2 @@
+[console_scripts]
+camera_publisher = cam_stream.camera_publisher:main
