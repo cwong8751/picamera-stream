@@ -27,15 +27,15 @@ check for permissions:
 
 <code>chmod +x src/cam_stream/cam_stream/camera_publisher.py</code>
 
-
 list all active topics, check for something related to camera and image_raw
 <code>ros2 topic list</code>
 
+
 ## how to view image
+**Before you try to view the image feed, make sure that both the raspberry pi and the computer is on the same network. It cannot be any wustl network.**
 1. rviz - it doens't work
 2. ros-image-view
-
-
+3. 
 
 ## assumptions
 1. you have ros2 installed
