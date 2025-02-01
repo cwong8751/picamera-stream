@@ -31,6 +31,10 @@ check for permissions:
 list all active topics, check for something related to camera and image_raw
 <code>ros2 topic list</code>
 
+## how to view image
+1. rviz - it doens't work
+2. ros-image-view
+
 
 
 ## assumptions
